@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Auction Time - वस्तुओं और डिजिटल प्रोडक्ट की नीलामी का प्लेटफॉर्म">
+  <title>Auction Time — Online Auction</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Auction Time Home"><span class="brand-mark">AT</span><span>Auction <b>Time</b></span></a>
+    <nav class="nav">
+      <a href="#auctions">नीलामियाँ</a>
+      <a href="#how">कैसे काम करता है</a>
+      <button class="btn btn-outline" id="loginBtn">Login / Register</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">🔨 बोली लगाएँ • जीतें • आगे बढ़ें</span>
+        <h1>आपकी अगली बड़ी डील<br><span>यहीं से शुरू होती है।</span></h1>
+        <p>वस्तुओं, वेबसाइटों, मोबाइल ऐप और डिजिटल प्रोडक्ट की नीलामी के लिए एक जगह।</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#auctions">नीलामी देखें <span>→</span></a>
+          <button class="btn btn-light" id="sellerBtn">विक्रेता बनने के लिए आवेदन</button>
+        </div>
+        <div class="trust-note">ℹ️ यह शुरुआती डेमो है। वास्तविक बोली, अकाउंट और भुगतान अभी सक्रिय नहीं हैं।</div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-top"><span class="live-dot"></span> लोकप्रिय नीलामी <span class="pill">DEMO</span></div>
+        <div class="auction-art art-purple"><span>🌐</span><small>DIGITAL ASSET</small></div>
+        <h3>Portfolio Website Template</h3>
+        <div class="hero-card-bottom"><div><small>वर्तमान बोली</small><strong>₹4,500</strong></div><div><small>समय बाकी</small><strong>02:14:36</strong></div></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>01</strong><span>सुरक्षित शुरुआत</span></div>
+      <div><strong>24/7</strong><span>नीलामी ब्राउज़ करें</span></div>
+      <div><strong>₹0</strong><span>डेमो देखने का शुल्क</span></div>
+    </section>
+
+    <section class="section" id="auctions">
+      <div class="section-head">
+        <div><span class="eyebrow">अभी खोजें</span><h2>चल रही नीलामियाँ</h2><p>श्रेणी चुनें या अपनी पसंद का प्रोडक्ट खोजें।</p></div>
+        <button class="btn btn-primary" id="sellListingBtn">+ नीलामी के लिए आवेदन</button>
+      </div>
+      <div class="filters">
+        <label class="searchbox">⌕ <input id="searchInput" type="search" placeholder="प्रोडक्ट खोजें..." aria-label="प्रोडक्ट खोजें"></label>
+        <select id="categoryFilter" aria-label="श्रेणी चुनें">
+          <option value="all">सभी श्रेणियाँ</option><option value="वस्तुएँ">वस्तुएँ</option><option value="वेबसाइट">वेबसाइट</option><option value="मोबाइल ऐप">मोबाइल ऐप</option><option value="गेम">गेम</option><option value="डिजिटल प्रोडक्ट">डिजिटल प्रोडक्ट</option>
+        </select>
+      </div>
+      <div class="auction-grid" id="auctionGrid"></div>
+      <p class="demo-warning">ये उदाहरण केवल डिज़ाइन दिखाने के लिए हैं। दिखाई गई कीमतें और टाइमर वास्तविक नीलामी नहीं हैं।</p>
+    </section>
+
+    <section class="section how-section" id="how">
+      <span class="eyebrow">सरल प्रक्रिया</span><h2>Auction Time कैसे काम करेगा?</h2>
+      <div class="steps">
+        <article><span>01</span><h3>अकाउंट बनाएँ</h3><p>खरीदार अकाउंट बनाकर नीलामी में भाग लेने का अनुरोध करेगा।</p></article>
+        <article><span>02</span><h3>बोली लगाएँ</h3><p>लाइव बोली और समय सर्वर पर सत्यापित होंगे, ताकि कोई गलत बोली न लगा सके।</p></article>
+        <article><span>03</span><h3>विजेता और भुगतान</h3><p>नियमों के अनुसार विजेता तय होगा। भुगतान की पुष्टि और डिलीवरी रिकॉर्ड रखे जाएँगे।</p></article>
+      </div>
+    </section>
+
+    <section class="admin-callout">
+      <div><span class="eyebrow">ADMIN CONTROL</span><h2>विक्रेता की अनुमति आपके हाथ में</h2><p>भविष्य के सुरक्षित Admin Dashboard में आप विक्रेता आवेदन, लिस्टिंग, शिकायत और ऑर्डर देख सकेंगे।</p></div>
+      <button class="btn btn-light" id="adminInfoBtn">Admin सेटअप जानकारी</button>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="/"><span class="brand-mark">AT</span><span>Auction <b>Time</b></span></a><p>© <span id="year"></span> Auction Time · शुरुआती डेमो</p><div><a href="#how">कैसे काम करता है</a><a href="mailto:hello@example.com">संपर्क (डेमो)</a></div></footer>
+
+  <dialog id="modal">
+    <form method="dialog" class="modal-card">
+      <button class="modal-close" aria-label="बंद करें">×</button>
+      <span class="eyebrow" id="modalEyebrow">AUCTION TIME</span>
+      <h2 id="modalTitle">शुरुआत करें</h2>
+      <p id="modalText"></p>
+      <div id="modalContent"></div>
+      <button class="btn btn-primary modal-ok">ठीक है</button>
+    </form>
+  </dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
